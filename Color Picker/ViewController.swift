@@ -30,8 +30,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         pickerView.dataSource = self
         pickerView.delegate = self
-        self.view.backgroundColor = dataSource[0].uiColor
-        detailLabel.text = dataSource[0].color
+        let initialRow = 0
+        self.view.backgroundColor = dataSource[initialRow].uiColor
+        detailLabel.text = dataSource[initialRow].color
     }
 }
 
